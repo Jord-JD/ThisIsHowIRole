@@ -1,8 +1,8 @@
 <? 
-namespace DivineOmega\ThisIsHowIRole;
+namespace JordJD\ThisIsHowIRole;
 
-use DivineOmega\ThisIsHowIRole\DatabaseDrivers\PDODatabaseDriver;
-use DivineOmega\ThisIsHowIRole\DatabaseDrivers\EloquentDatabaseDriver;
+use JordJD\ThisIsHowIRole\DatabaseDrivers\PDODatabaseDriver;
+use JordJD\ThisIsHowIRole\DatabaseDrivers\EloquentDatabaseDriver;
 
 abstract class DatabaseHelper
 {

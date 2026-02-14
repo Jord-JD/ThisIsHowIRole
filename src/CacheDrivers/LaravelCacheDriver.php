@@ -1,8 +1,8 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole\CacheDrivers;
+namespace JordJD\ThisIsHowIRole\CacheDrivers;
 
-use DivineOmega\ThisIsHowIRole\Interfaces\CacheDriverInterface;
+use JordJD\ThisIsHowIRole\Interfaces\CacheDriverInterface;
 use Illuminate\Support\Facades\Cache;
 
 class LaravelCacheDriver implements CacheDriverInterface {

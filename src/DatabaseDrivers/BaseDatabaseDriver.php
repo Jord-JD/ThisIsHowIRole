@@ -1,11 +1,11 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole\DatabaseDrivers;
+namespace JordJD\ThisIsHowIRole\DatabaseDrivers;
 
-use DivineOmega\ThisIsHowIRole\Interfaces\DatabaseDriverInterface;
-use DivineOmega\ThisIsHowIRole\Utils;
-use DivineOmega\ThisIsHowIRole\CacheDrivers\RWFileCacheDriver;
-use DivineOmega\ThisIsHowIRole\CacheDrivers\LaravelCacheDriver;
+use JordJD\ThisIsHowIRole\Interfaces\DatabaseDriverInterface;
+use JordJD\ThisIsHowIRole\Utils;
+use JordJD\ThisIsHowIRole\CacheDrivers\RWFileCacheDriver;
+use JordJD\ThisIsHowIRole\CacheDrivers\LaravelCacheDriver;
 
 abstract class BaseDatabaseDriver implements DatabaseDriverInterface
 {

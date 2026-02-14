@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole\Interfaces;
+namespace JordJD\ThisIsHowIRole\Interfaces;
 
 interface DatabaseDriverInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole\DatabaseDrivers;
+namespace JordJD\ThisIsHowIRole\DatabaseDrivers;
 
-use DivineOmega\ThisIsHowIRole\Interfaces\DatabaseDriverInterface;
-use DivineOmega\ThisIsHowIRole\DatabaseDrivers\BaseDatabaseDriver;
-use DivineOmega\ThisIsHowIRole\Utils;
+use JordJD\ThisIsHowIRole\Interfaces\DatabaseDriverInterface;
+use JordJD\ThisIsHowIRole\DatabaseDrivers\BaseDatabaseDriver;
+use JordJD\ThisIsHowIRole\Utils;
 
 class PDODatabaseDriver extends BaseDatabaseDriver implements DatabaseDriverInterface
 {

@@ -94,7 +94,7 @@ the example `User` class shown below.
 ```php
 require 'vendor/autoload.php';
 
-use DivineOmega\ThisIsHowIRole\RolesTrait as Roles; // <-- Line 1
+use JordJD\ThisIsHowIRole\RolesTrait as Roles; // <-- Line 1
 
 class User
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole\DatabaseDrivers\Eloquent;
+namespace JordJD\ThisIsHowIRole\DatabaseDrivers\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
 

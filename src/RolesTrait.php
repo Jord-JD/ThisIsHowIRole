@@ -1,8 +1,8 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole;
+namespace JordJD\ThisIsHowIRole;
 
-use DivineOmega\ThisIsHowIRole\RolesManager;
+use JordJD\ThisIsHowIRole\RolesManager;
 
 trait RolesTrait
 {

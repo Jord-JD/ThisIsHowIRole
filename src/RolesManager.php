@@ -1,9 +1,9 @@
 <?php
 
-namespace DivineOmega\ThisIsHowIRole;
+namespace JordJD\ThisIsHowIRole;
 
 
-use DivineOmega\ThisIsHowIRole\DatabaseHelper;
+use JordJD\ThisIsHowIRole\DatabaseHelper;
 
 class RolesManager
 {

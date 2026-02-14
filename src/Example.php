@@ -14,8 +14,8 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 /* Test User class */
 
-use DivineOmega\ThisIsHowIRole\RolesTrait as Roles;
-use DivineOmega\ThisIsHowIRole\Utils;
+use JordJD\ThisIsHowIRole\RolesTrait as Roles;
+use JordJD\ThisIsHowIRole\Utils;
 
 class User
 {
