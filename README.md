@@ -6,7 +6,7 @@ class.
 ## Installation
 
 You can use `composer` to install this package. 
-Just run `composer require divineomega/thisishowirole`.
+Just run `composer require jord-jd/thisishowirole`.
 
 ## Setup
 

@@ -1,20 +1,28 @@
 {
-    "name": "divineomega/thisishowirole",
-    "description": "'This Is How I Role' is a PHP role management system that can be applied to any class.",
-    "license": "LGPL-3.0-only",
-    "keywords": [
-        "php",
-        "library",
-        "roles",
-        "permissions"
-      ],
-    "require": {
-        "php": ">=5.5.9",
-        "rapidwebltd/RW-File-Cache": "^1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "DivineOmega\\ThisIsHowIRole\\": "src"
-        }
+  "name": "jord-jd/thisishowirole",
+  "description": "'This Is How I Role' is a PHP role management system that can be applied to any class.",
+  "license": "LGPL-3.0-only",
+  "keywords": [
+    "php",
+    "library",
+    "roles",
+    "permissions"
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "rapidwebltd/rw-file-cache": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivineOmega\\ThisIsHowIRole\\": "src"
     }
+  },
+  "replace": {
+    "divineomega/thisishowirole": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0-dev"
+    }
+  }
 }
