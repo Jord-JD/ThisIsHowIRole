@@ -9,21 +9,46 @@
     "permissions"
   ],
   "require": {
-    "php": ">=5.5.9",
-    "rapidwebltd/rw-file-cache": "^1.0"
+    "php": ">=5.5.9"
+  },
+  "require-dev": {
+    "illuminate/database": "^5.1 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
+    "illuminate/support": "^5.1 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0",
+    "phpunit/phpunit": "^4.8 || ^9.6 || ^12.0"
   },
   "autoload": {
     "psr-4": {
       "JordJD\\ThisIsHowIRole\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "JordJD\\ThisIsHowIRole\\Tests\\": "tests/"
+    }
+  },
   "replace": {
     "divineomega/thisishowirole": "self.version"
   },
   "extra": {
+    "laravel": {
+      "providers": [
+        "JordJD\\ThisIsHowIRole\\ServiceProvider"
+      ]
+    },
     "branch-alias": {
-      "dev-master": "4.0-dev"
+      "dev-master": "4.x-dev"
     }
   },
-  "require-dev": {}
+  "suggest": {
+    "ext-pdo": "Required when using the standalone PDO database driver.",
+    "laravel/framework": "Enables automatic Eloquent storage, Laravel caching, and packaged migrations."
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": false
+    }
+  }
 }

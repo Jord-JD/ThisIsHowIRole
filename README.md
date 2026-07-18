@@ -25,43 +25,12 @@ CREATE TABLE IF NOT EXISTS `tihir_roles` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 ```
 
-If you're using Laravel, you can use the following database migration to
-create the TIHIR roles table.
+Laravel applications receive the package migration automatically through package
+discovery. Run `php artisan migrate` as usual. The migration safely skips creation
+when an existing application migration has already created `tihir_roles`.
 
-```php
-<?php
-
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
-
-class CreateThisIsHowIRoleRolesTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('tihir_roles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('class_name');
-            $table->bigInteger('foreign_id');
-            $table->text('roles');
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::drop('tihir_roles');
-    }
-}
-```
+For Laravel versions without package discovery, add
+`JordJD\ThisIsHowIRole\ServiceProvider::class` to the application providers list.
 
 ### Database connection configuration
 
