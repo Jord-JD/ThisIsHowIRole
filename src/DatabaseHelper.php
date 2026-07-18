@@ -1,4 +1,4 @@
-<? 
+<?php
 namespace JordJD\ThisIsHowIRole;
 
 use JordJD\ThisIsHowIRole\DatabaseDrivers\PDODatabaseDriver;

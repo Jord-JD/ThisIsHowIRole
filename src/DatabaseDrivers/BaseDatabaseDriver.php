@@ -4,7 +4,7 @@ namespace JordJD\ThisIsHowIRole\DatabaseDrivers;
 
 use JordJD\ThisIsHowIRole\Interfaces\DatabaseDriverInterface;
 use JordJD\ThisIsHowIRole\Utils;
-use JordJD\ThisIsHowIRole\CacheDrivers\RWFileCacheDriver;
+use JordJD\ThisIsHowIRole\CacheDrivers\FileCacheDriver;
 use JordJD\ThisIsHowIRole\CacheDrivers\LaravelCacheDriver;
 
 abstract class BaseDatabaseDriver implements DatabaseDriverInterface
@@ -16,7 +16,7 @@ abstract class BaseDatabaseDriver implements DatabaseDriverInterface
     if (class_exists('Illuminate\Support\Facades\Cache')) {
       $this->cache = new LaravelCacheDriver;
     } else {
-      $this->cache = new RWFileCacheDriver;
+      $this->cache = new FileCacheDriver;
     }
   }
 
